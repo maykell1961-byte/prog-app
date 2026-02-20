@@ -1,4 +1,4 @@
-import React from 'react'
+import './DiasDaSemana.css'
 
 function DiaDaSemana() {
     function verificarDia(){
@@ -41,7 +41,7 @@ function DiaDaSemana() {
     }
 }
     return (
-        <div>
+        <div className={"container-dia"}>
             <h2>Dia da semana</h2>
             <button onClick={VerificarDia}>Verificar dia</button>
         </div>
