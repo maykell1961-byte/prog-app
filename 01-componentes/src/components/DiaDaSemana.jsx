@@ -43,7 +43,7 @@ function DiaDaSemana() {
     return (
         <div className={"container-dia"}>
             <h2>Dia da semana</h2>
-            <button onClick={VerificarDia}>Verificar dia</button>
+            <button onClick={"VerificarDia"}>Verificar dia</button>
         </div>
     )
 }

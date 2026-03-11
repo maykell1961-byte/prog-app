@@ -21,18 +21,18 @@ function Notas() {
             alert("B")
         }else if(nota > 40){
             alert("C")
-        }else if(nota > 20)
+        }else if(nota > 20){
             alert("D")
         }else if(nota > 0){
             alert("E")
         }else{
-            
+            alert("Nota não existe")
         }
     
     return (
         <div>
         <h2>Classificarção de Notas</h2>
-        <button onclick={classificarNotas}></button>
+        <button onclick={"ClassificarNotas"}>Notas</button>
             
         </div>
     )
