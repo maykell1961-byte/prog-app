@@ -2,33 +2,35 @@ import {useState} from 'react'
 // import './Pneu.css'
 
 function Pneu() {
-    const[inputNumber, setInputNumber] = useState('')
+    const[inputDigitada, setInputDigitada] = useState('')
+    const[inputLida, setInputLida] = useState("")
+    const[resultado, setResultado] = useState("")
     function pressaoDesejada(){
+        let diferenca = inputDigitada - inputLida;
 
-        console.log("Pressão desejada: " + inputNumber)
+
+       // console.log("Pressão desejada: " + diferenca)
+        setResultado ("Pressão desejada: " + diferenca)
     
 
     }
     return (
         <>
 
-        <h1>Pressão Desejada</h1>
-        number = <input type= "Number"
-        value = {inputNumber}
-        onChange = {(e) => setInputNumber (e.target.value) }
+        <h1>Claculo de Pressão</h1>
+        Pressão digitada = <input type= "Number"
+        value = {inputDigitada}
+        onChange = {(e) => setInputDigitada (e.target.value) }
             
         />
-        <p>Number digitado: {inputNumber}</p>
-        <button onClick= {pressaoDesejada}>pressãoDesejada</button>
-        <>
-
-        <h1>Pressão lida</h1>
-        number = <input type= "Number"
-        value = {InputNumber}
-        onChange = {(e) => setInputNumber (e.target.value)}
-        />
-        <p>Number digitado: {inputNumber}</p>
-        <button onClick= {pressãoLida}>pressãoLida</button>
+     
+         Pressão lida = <input type= "Number"
+        value = {inputLida}
+        onChange = {(e) => setInputLida (e.target.value)}
+         /> 
+       
+        <button onClick= {pressaoDesejada}>Clacular</button>
+        {resultado}
         
         </>
     )
