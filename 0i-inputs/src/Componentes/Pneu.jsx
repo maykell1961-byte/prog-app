@@ -7,17 +7,14 @@ function Pneu() {
     const[resultado, setResultado] = useState("")
     function pressaoDesejada(){
         let diferenca = inputDigitada - inputLida;
-
-
-       // console.log("Pressão desejada: " + diferenca)
+        // console.log("Pressão desejada: " + diferenca)
         setResultado ("Pressão desejada: " + diferenca)
-    
-
     }
+    
+    
     return (
         <>
-
-        <h1>Claculo de Pressão</h1>
+        <h2>Calcular Pressao</h2>
         Pressão digitada = <input type= "Number"
         value = {inputDigitada}
         onChange = {(e) => setInputDigitada (e.target.value) }
@@ -35,6 +32,7 @@ function Pneu() {
         </>
     )
 }
+
 
 export default Pneu
 

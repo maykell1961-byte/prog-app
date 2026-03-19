@@ -1,24 +1,21 @@
 import { useState } from 'react'
 import './App.css'
+import Pneu from './Componentes/Pneu';
+import PapaiNoel from './Componentes/PapaiNoel';
+import Media from './Componentes/Media';
 
 
 function App() {
-  const[inputNome, setInputNome] = useState('')
-  function cadastrar(){
-    console.log("Cadastrar:" + inputNome)
-
-  }
   return (
     <>
-    <h1>Inputs controlados</h1>
-    nome <input type="text"
-      value={inputNome}
-      onChange={ (e) => setInputNome (e.target.value)}
-    />
-
-  <p>nome digitado: {inputNome}</p>
-     <button onClick={cadastrar}> Cadastrar</button>
-
+    <h1>Exercícios</h1>
+    <br/>
+    <Pneu />
+    <br/>
+    <PapaiNoel />
+    <br/>
+    <Media/>
+    <br/>
     </>
   )
 }
