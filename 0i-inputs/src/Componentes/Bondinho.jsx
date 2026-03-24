@@ -1,19 +1,32 @@
 import {useState} from 'react'
 
 function Bondinho() {
-    const[inputClaculoViajem, setClaculoViajem] = useState('')
-    const[viajem, setViajem] = useState('') 
-    function ClaculeViajem(){
+    const[inputAlunos, setAlunos] = useState('')
+    const[inputMonitores, setMonitores] = useState('')
+    const[Viajem, setViajem] = useState('') 
+    function CalculeViajem(){
+      let qtd = 0
+      let Viajem = 50
+      for(i =0; i <= 50; i++){
+        if(Viajem <= qtd)
+          setViajem("posssivel segir Viajem")
+      }else{
+          setViajem("Não é possivel segir Viajem")
+      }
+
 
     }
   return (
     <>
     <h2>Claculo do Bondinho</h2>
-    viajem de Bondnho = <input type= 'viajem'
-    value= {inputClaculoViajem}
-    onChange = {(e)=> setInputClaculoViajem(e.target.value)}
+    alunos = <input type= 'Nembru'
+    value = {inputAlunos}
+    onChange = {(e)=> setAlunos(e.target.value)}
     />
-    <button onClick= {}></button>
+    monitores = <input type= 'Number'
+    value = {inputMonitores}
+    onChange = {(e)=> setMonitores(e.target.value)}
+    <button onClick= {CalculeViajem}>Viajem</button>
 
     </>
   )
