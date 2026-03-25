@@ -4,16 +4,17 @@ function Bondinho() {
     const[inputAlunos, setAlunos] = useState('')
     const[inputMonitores, setMonitores] = useState('')
     const[Viajem, setViajem] = useState('') 
-    function CalculeViajem(){
-      let qtd = 0
-      let Viajem = 50
-      for(i =0; i <= 50; i++){
-        if(Viajem <= qtd)
+    function CalculeViajem(A, m){
+        if(A + M <=50){
+          return "S"
           setViajem("posssivel segir Viajem")
       }else{
+        return "N"
           setViajem("Não é possivel segir Viajem")
       }
-
+          setViajem(podeSubir(10,20));
+          setViajem(podeSubir(12, 39));
+          setViajem(podesubir(49, 1));
 
     }
   return (
@@ -27,7 +28,7 @@ function Bondinho() {
     value = {inputMonitores}
     onChange = {(e)=> setMonitores(e.target.value)}
     <button onClick= {CalculeViajem}>Viajem</button>
-
+    />
     </>
   )
 }
