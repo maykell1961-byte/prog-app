@@ -6,9 +6,10 @@ import Contato from './pages/Contato';
 import Produtos from './pages/Produtos';
 import TabernaPeriodica from './pages/TabernaPeriodica';
 import CoxaoDoSantinho from './pages/CoxaoDoSantinho';
-import ChurrascariaDoGuacho from './pages/ChurrascariaDoGaucho';
+import ChurrascariaDoGaucho from './pages/ChurrascariaDoGaucho';
 function App() {
-  const[tela, setTela]= useState(<Home />)
+  const[tela, setTela]= useState(<Home />);
+  
   
   return (
     <div className="cont-app">
@@ -25,8 +26,6 @@ function App() {
     <main className={'cont-main'}>
     {tela}
     </main>
-    <TabernaPeriodica />
-    <CoxaoDoSantinho />
     </div>
       
   )
