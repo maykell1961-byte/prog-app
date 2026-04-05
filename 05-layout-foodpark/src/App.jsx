@@ -8,7 +8,7 @@ import TabernaPeriodica from './pages/TabernaPeriodica';
 import CoxaoDoSantinho from './pages/CoxaoDoSantinho';
 import ChurrascariaDoGaucho from './pages/ChurrascariaDoGaucho';
 function App() {
-  const[tela, setTela]= useState(<Home />);
+  const[tela, setTela]= useState(<Home />)
   
   
   return (
