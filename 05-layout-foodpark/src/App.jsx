@@ -20,7 +20,7 @@ function App() {
       <button className={'botoes-nav'} onClick={()=> setTela(<Contato />)}>contato</button>
       <button className={'botoes-nav'} onClick={()=> setTela(<TabernaPeriodica />)}>Taberna Periodica</button>
       <button className={'botoes-nav'} onClick={()=> setTela(<CoxaoDoSantinho />)}>Coxão do Santinho</button>
-      <button classname={'botoes-nav'} onClick={()=> setTela(<ChurrascariaDoGaucho />)}>Churrascaria do gaucho</button>
+      <button className={'botoes-nav'} onClick={()=> setTela(<ChurrascariaDoGaucho />)}>Churrascaria do gaucho</button>
     </nav>
     </header>
     <main className={'cont-main'}>
