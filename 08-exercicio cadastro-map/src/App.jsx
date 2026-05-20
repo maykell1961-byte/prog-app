@@ -31,7 +31,7 @@ return (
     <h2></h2>
     <p></p>
   </section>
-
+  
   <hr/>
   <h1></h1>
   <div className="cont-from">
@@ -42,6 +42,7 @@ return (
   value={inputImagem}
   onChange={(e) => setInputImagem(e.target.value)}
   />
+   <img src="./img foodtrack/gaucho.webp" alt="" className={"cont-img"}/>
   </div>
   <div className="input-container">
   <label htmlFor="">nome</label>
